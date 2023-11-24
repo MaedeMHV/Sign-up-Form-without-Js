@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen flex flex-col items-center justify-center bg-[url(../../img/img5.jpg)] object-cover;
+}
+
+h1 {
+  @apply mb-5 font-bold text-2xl text-[#f7f7f7];
+}
+.signInForm {
+  @apply h-[450px] w-[350px] bg-neutral-800 bg-opacity-70 flex flex-col justify-center  px-4 rounded-lg shadow-md shadow-zinc-800;
+}
+.signInForm svg {
+  @apply self-center justify-center place-self-center;
+}
+.input {
+  @apply border-b-2 border-white bg-transparent w-full text-white;
+}
+.form_ctrl {
+  @apply relative h-12 mt-7;
+}
+.form_ctrl label {
+  @apply absolute top-[-3px] left-0 text-white duration-500 ease-in;
+}
+.form_ctrl:hover label {
+  @apply absolute top-[-25px] left-0 text-white duration-500 ease-in;
+}
+.form_ctrl .input:focus + label,
+.form_ctrl .input:valid + label,
+.form_ctrl .input:hover + label {
+  @apply absolute top-[-25px] left-0  text-white duration-500 ease-in;
+}
+.btn {
+  @apply w-full bg-zinc-300 hover:bg-zinc-800 hover:text-white text-[#555] font-bold rounded-xl shadow-md shadow-zinc-700 py-4 mt-7;
+}
+.signInForm p {
+  @apply text-white text-sm ml-4 mt-3;
+}
+.signInForm p a {
+  @apply text-blue-300;
+}
